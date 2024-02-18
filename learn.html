@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div id="title" class=" p-4 text-5xl text-center w-full">
+        <p>
+          Hello Title
+      </p>
+      <span style="display: none;">Part</span>
+    </div> -->
+      <!-- <input type="text">
+      <input type="password">
+      <input type="number"> -->
+      <!-- <ul>
+        <li class="list-items">first</li>
+        <li class="list-items">Second</li>
+        <li class="list-items">Third</li>
+        <li class="list-items">Four</li>
+      </ul> -->
+      <!-- <ul class="language bg-zinc-600 text-zinc-200 inline-block px-4">
+        <li>javascript</li>
+
+      </ul> -->
+
+      <!-- 
+        ___________________________
+          BackgroundColor changer 
+        ___________________________     
+ <ul class="flex gap-3 flex-wrap j id="closebtn"ustify-center items-center h-[40vh] ">
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-neutral-500" id="grey"></li>
+      
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-red-700" id="red"></li>
+      
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-blue-500" id="blue"></li>
+      
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-yellow-500" id="yellow"></li>
+      
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-rose-400" id="pink"></li>
+      
+      <li class="cursor-pointer button h-32 w-40 border-black  border border-[8px] bg-green-500" id="green"></li>
+  </ul> 
+    -->
+
+      <!--
+____________________________________ 
+
+      Body Mass Index(BMI CALC)
+____________________________________  
+    
+  <div class="px-6 py-6 bg-zinc-700 relative h-screen">
+        <h2 class="text-4xl font-bold text-zinc-400">BMI calculator</h2>
+      <form>
+        <div class="mt-10 p-6 flex">
+          <div class="font-semibold">
+              <label class="text-zinc-200 ">Height in CM : </label>
+              <input class="px-4" type="number" placeholder="Height" name="height" id="height" required/>
+          </div>
+  
+          <div class="font-semibold">
+              <label class="text-zinc-200 ">Weight in KG : </label>
+              <input class="px-4" type="number" placeholder="Weight" id="weight" name="weight" required/>
+            </div>
+            <p class="absolute bottom-2 left-1/3 text-xl text-slate-200">Result : </p>
+          </div>
+        <button type="submit"
+          class="border-4 border-zinc-950 px-4 py-2 absolute top-7 right-[160px] text-xl font-semibold text-zinc-300 rounded-2xl bg-zinc-600">
+            Calculate
+        </button>
+      </form>
+    </div>
+   -->
+
+      <!-- 
+____________________________________ 
+
+          Digital Clock
+____________________________________  
+
+
+<div class="center bg-zinc-700 h-screen text-zinc-300 flex justify-center items-center text-xl font-semibold flex-col gap-3">
+  <div id="banner"><span>Local Time</span>
+  </div>
+  <div id="clock" class="bg-yellow-600 h-12  rounded-lg border-4 border-black px-2 py-1 text-zinc-800 text-2xl">
+
+  </div>
+</div>
+
+-->
+
+<!-- 
+____________________________________ 
+
+        Guess The Number
+____________________________________   
+-->
+<div id="wrapper" class="relative h-screen bg-zinc-700 text-xl text-zinc-300">
+  <h1 class="text-center py-6 font-bold text-4xl">Guess the Number</h1>
+  <form class="text-black flex flex-col justify-center items-center gap-5 " >
+    <input type="number" id="guessField" placeholder="guess number(<10)" class=" w-1/3  pl-3" required>
+    <input type="submit" id="subt" value="submit" class="border-4  border-red-300 h-12 w-32 bg-red-900 text-slate-200 rounded-lg">
+  </form>
+
+  <div id="resultParas" class="flex flex-col justify-center  items-center pt-20">
+    <p>Actual Guess : <span class="guesses"></span></p>
+    <p>Prev Guess : <span class="guessesPrev"></span></p>
+    <p>Remaining Guess : <span class="lastResult"></span> </p>
+    <p class="lowOrHi "></p>
+  </div>
+  
+  <div id ="failedCase" class="h-screen z-4 top-0 left-0 flex justify-center items-center w-full backdrop-opacity-15  bg-black/70 absolute invisible ">
+    <div id = "msgBack" class="h-1/3 w-1/2 flex justify-center items-center text-5xl font-bold text-zinc-700 rounded-3xl flex-col"> 
+      <p id="closebtn" class="self-end px-4">X</p>
+      <p id="msgBtn">U won</p></div>
+  </div>
+</div>
+
+
+
+
+</div>
+    <script src="./learnscript.js"></script>
+  </body>
+</html>
