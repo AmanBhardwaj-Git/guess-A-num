@@ -512,7 +512,7 @@ form.addEventListener("submit", (e) => {
   let guessInp = document.querySelector("#guessField").value;
   let prevNum = document.querySelector(".guesses");
 
-  if (parseInt(remguess.textContent) >= 0) {
+  if (parseInt(remguess.textContent) > 0) {
     if (guessInp == randomNum) {
       document.querySelector("#msgBack").style.backgroundColor = "yellow";
       document.querySelector("#failedCase").style.visibility = "visible";
